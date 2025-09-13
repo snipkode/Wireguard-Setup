@@ -5,10 +5,10 @@
 # VPS IP : 123.123.123.123
 
 ZONE_DIR="/etc/bind"
-DOMAIN="namadomain.co.id"
+DOMAIN="homelab.co.id"
 NS_HOST="ns1"
-IPV4="123.123.123.123"
-REVERSE_ZONE="123.123.123.in-addr.arpa"
+IPV4="172.20.10.2"
+REVERSE_ZONE="2.10.20.in-addr.arpa"
 REV_FILE="$ZONE_DIR/db.$(echo $IPV4 | cut -d. -f1-3)"
 FWD_FILE="$ZONE_DIR/db.$DOMAIN"
 
